@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity = "center_vertical|center_horizontal"
+            android:indeterminate="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loadingPanelText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|bottom" >
+
+        <TextView
+            android:id="@+id/textHeadlineStart"
+            android:textAlignment="gravity"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Ngài đánh thức con mỗi buổi sớm mai, đánh thức tai con để nghe lời Ngài dạy, như học trò vậy."
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:padding="30dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tĩnh Nguyện Mỗi Ngày</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash_screen">365 Tia Sáng</string>
+    <string name="title_activity_article_detail">Tia Sáng </string>
+
+</resources>
