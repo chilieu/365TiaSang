@@ -12,8 +12,8 @@
         android:gravity="center" >
 
     <TextView android:id="@+id/txtTitle"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:textStyle="bold"
         android:textSize="25sp"
         android:text="365"
@@ -30,7 +30,7 @@
 
     <TextView android:id="@+id/txtHeadline"
         android:layout_width="fill_parent"
-        android:layout_height="65dp"
+        android:layout_height="85dp"
         android:layout_alignRight="@id/txtTitle"
         android:textSize="18sp"
         android:singleLine="false"

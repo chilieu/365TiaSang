@@ -106,6 +106,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 
     public ArticleDB getArticle(int id){
 
+        ArticleDB article = new ArticleDB();
         // 1. get reference to readable DB
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -125,7 +126,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
             cursor.moveToFirst();
 
         // 4. build book object
-        ArticleDB article = new ArticleDB(Integer.parseInt(cursor.getString(0)), cursor.getString(1), cursor.getString(2), cursor.getString(3),Integer.parseInt(cursor.getString(4)));
+        article = new ArticleDB(Integer.parseInt(cursor.getString(0)), cursor.getString(1), cursor.getString(2), cursor.getString(3),Integer.parseInt(cursor.getString(4)));
 
         //log
         //Log.d("getArticle("+id+")", article.toString());

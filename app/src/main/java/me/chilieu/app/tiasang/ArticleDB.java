@@ -12,6 +12,7 @@ public class ArticleDB {
     private String content;
     private String headline;
     private int status;
+    private String dom;
 
     public ArticleDB(){}
 
@@ -26,6 +27,10 @@ public class ArticleDB {
     @Override
     public String toString(){
         return "Article [" + id + "]=" + title;
+    }
+    public ArticleDB getObjByID(int id){
+        ArticleDB item = new ArticleDB();
+        return item;
     }
     public String getId(){
         return format("%03d", this.id);
@@ -42,5 +47,6 @@ public class ArticleDB {
     public String getHeadline(){
         return this.headline;
     }
-
+    public String getDom(){return this.dom;}
+    public void setDom(String dom){ this.dom = dom;}
 }
